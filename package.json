@@ -2,19 +2,25 @@
   "name": "p5",
   "version": "1.0.0",
   "description": "experiments with p5",
-  "main": "index.js",
   "scripts": {
-    "start": "reload"
+    "build": "webpack --mode production --config webpack.config.js",
+    "dev": "webpack-dev-server --mode development --config webpack.config.js"
   },
   "dependencies": {
     "p5": "0.7.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
     "babel-eslint": "10.0.1",
-    "eslint": "5.6.1",
+    "babel-loader": "^8.0.4",
+    "eslint": "5.11.1",
     "eslint-config-dzhurley": "1.0.2",
     "eslint-config-p5js": "1.0.1",
-    "reload": "2.3.1"
+    "eslint-loader": "2.1.1",
+    "webpack": "4.28.3",
+    "webpack-cli": "3.1.2",
+    "webpack-dev-server": "3.1.14"
   },
   "license": "MIT"
 }
