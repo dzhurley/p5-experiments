@@ -10,15 +10,24 @@
         overflow: hidden;
       }
 
-      .sketches {
+      .info {
         position: absolute;
         top: 0;
         left: 0;
+        padding: 0.5rem;
+      }
+
+      .title {
+        margin-top: 0.25rem;
+        margin-left: 0.25rem;
       }
     </style>
   </head>
   <body>
-    <form class="sketches"></form>
+    <section class="info">
+      <form class="sketches"></form>
+      <p class="title"></p>
+    </section>
     <div id="sketch"></div>
     <script src="main.js"></script>
   </body>
